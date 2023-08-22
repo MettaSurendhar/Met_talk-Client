@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.cred-form{
+  padding:14px 32px;
+  background:rgba(255,255,255,0.06);
+  box-shadow: 0 14px 32px 0 rgba(27, 3, 24, 0.189);
+  border-radius: 12px;
+  border-left: 2px solid rgba(255,255,255,.3);
+  border-top: 2px solid rgba(255,255,255,.3);
+  min-width: 400px;
+}
+
+.form-control:focus{
+  box-shadow: 0 14px 18px 0 rgba(27, 3, 24, 0.189);
+}
+
+.form-floating > label{
+  color: #000;
+  opacity: .3;
+}
+
+.is-invalid:focus{
+  box-shadow: none !important;
+  border: 4px solid rgba(7, 7, 7, 0.196) !important;
+  border-radius: 8px;
+  padding-top: 1.625rem;
+  padding-bottom: 1.625rem;
+  padding-right: 0;
+}
+
+.invalid-feedback{
+  color:#fff ;
+  margin-left:8px;
+}
+
+input,
+textarea{
+  opacity: .8;
+}
+
+label{
+  color: #000;
+  opacity: .3;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.form-input-file label{
+  opacity:1;
+}
+
+.form-input-file input{
+  opacity:.8;
+}
+
+
+.btn{
+  cursor:pointer !important;
+  background:rgba(255,255,255,0.2);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 123, 0.178);
+  border-left: 1px solid rgba(255,255,255,.3);
+  border-top: 1px solid rgba(255,255,255,.3);
+}
+
+.btn:hover{
+  background:rgba(255,255,255,0.4);
+}
+
+.btn:active{
+  background:rgba(255,255,255,0.5) !important ;
+  outline: none !important;
+}
+
+.btn-reset:hover{
+  background:rgba(255, 0, 0, 0.4);
+}
+
+.btn-save:hover{
+  background:rgba(0, 255, 98, 0.4);
+}
+
+.btn-reset:active{
+  background:rgba(255,0,0,0.5) !important ;
+  outline: none !important;
+}
+
+.btn-save:active{
+  background:rgba(0,255,0,0.5) !important ;
+  outline: none !important;
+}
+
+#send-btn:hover{
+	cursor: pointer !important;
+}
+
+.logout{
+  display: block;
+  background:rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 123, 0.178);
+  color: #eee;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.copy-right{
+  align-self:flex-start !important;
+}
+
+/* Background Animation */
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  z-index: -1;
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.3;
+      border-radius: 20%;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(-720deg);
+      opacity: 0.9;
+      border-radius: 60%;
+  }
+
+}
